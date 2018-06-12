@@ -16,6 +16,7 @@ CREATE TABLE authors (
 );
 
 CREATE TABLE books (
+  id INTEGER PRIMARY KEY,
   
 );
 
