@@ -1,5 +1,8 @@
 def select_books_titles_and_years_in_first_series_order_by_year
-  "SELECT books.title, books.year FROM books INNER JOIN series ON books.series_id = series.id WHERE series.id = 1 ORDER BY books.year;"
+  "SELECT books.title, books.year FROM books
+   INNER JOIN series
+   ON books.series_id = series.id
+   WHERE series.id = 1 ORDER BY books.year;"
 end
 
 #it 'returns the name and motto of the character with the longest motto' do
