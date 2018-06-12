@@ -22,15 +22,6 @@ CREATE TABLE books (
   series_id INTEGER
 );
 
-    it "creates a books table with a series_id field" do
-      expect{@db.execute("SELECT series_id FROM books;")}.to_not raise_exception
-    end
-
-    it "creates a books table with an id as a primary key" do
-      expect(@db.execute("PRAGMA table_info(books);").detect { |arr| arr[-1] == 1 && arr[2] == "INTEGER" }.length).to eq(6)
-    end
-  end
-
   describe 'characters table' do 
     it "creates a characters table with a name field" do
       expect{@db.execute("SELECT name FROM characters;")}.to_not raise_exception
