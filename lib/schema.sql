@@ -26,9 +26,9 @@ CREATE TABLE characters (
   id INTEGER PRIMARY KEY,
   name TEXT,
   species TEXT,
+  motto TEXT,
   
 );
-
 
     it "creates a characters table with a motto field" do
       expect{@db.execute("SELECT motto FROM characters;")}.to_not raise_exception
