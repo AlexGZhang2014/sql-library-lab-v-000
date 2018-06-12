@@ -28,11 +28,6 @@ CREATE TABLE characters (
   
 );
 
-  describe 'characters table' do 
-    it "creates a characters table with a name field" do
-      expect{@db.execute("SELECT name FROM characters;")}.to_not raise_exception
-    end
-
     it "creates a characters table with a species field" do
       expect{@db.execute("SELECT species FROM characters;")}.to_not raise_exception
     end
