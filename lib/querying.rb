@@ -1,3 +1,7 @@
+it 'selects all of the books titles and years in the first series and orders them chronologically' do
+    expect(@db.execute(select_books_titles_and_years_in_first_series_order_by_year)).to eq([["Game of Thrones", 1996], ["A Clash of Kings", 1998], ["A Storm of Swords", 2000]])
+  end
+
 def select_books_titles_and_years_in_first_series_order_by_year
   "Write your SQL query here"
 end
