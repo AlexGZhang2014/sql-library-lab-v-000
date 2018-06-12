@@ -29,9 +29,6 @@ CREATE TABLE characters (
   
 );
 
-    it "creates a characters table with a species field" do
-      expect{@db.execute("SELECT species FROM characters;")}.to_not raise_exception
-    end
 
     it "creates a characters table with a motto field" do
       expect{@db.execute("SELECT motto FROM characters;")}.to_not raise_exception
