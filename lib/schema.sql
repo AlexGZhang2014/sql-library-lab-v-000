@@ -32,7 +32,7 @@ CREATE TABLE characters (
 );
 
 CREATE TABLE character_books (
-  
+  id INTEGER PRIMARY KEY
 );
 
   describe 'character_books join table' do
