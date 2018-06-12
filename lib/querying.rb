@@ -27,7 +27,7 @@ it 'selects the series title with the most characters that are the species "huma
   end
 
 def select_series_title_with_most_human_characters
-  "Write your SQL query here"
+  ""
 end
 
 it 'selects all of the character names and their number of books they have appeared in, in descending order' do
