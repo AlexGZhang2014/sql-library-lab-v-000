@@ -1,11 +1,9 @@
 CREATE TABLE series (
-  title
+  id INTEGER PRIMARY KEY,
+  title TEXT,
+  author_id INTEGER,
+  
 );
-
-describe 'series table' do 
-    it "creates a series table with a title field" do
-      expect{@db.execute("SELECT title FROM series;")}.to_not raise_exception
-    end
 
     it "creates a series table with a author_id field" do
       expect{@db.execute("SELECT author_id FROM series;")}.to_not raise_exception
