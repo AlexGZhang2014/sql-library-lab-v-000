@@ -27,7 +27,7 @@ it 'selects the series title with the most characters that are the species "huma
   end
 
 def select_series_title_with_most_human_characters
-  "SELECT series.title FROM series"
+  "SELECT series.title FROM series INNER JOIN characters ON series.id = characters.series_id"
 end
 
 it 'selects all of the character names and their number of books they have appeared in, in descending order' do
