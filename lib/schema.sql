@@ -19,7 +19,7 @@ CREATE TABLE books (
   id INTEGER PRIMARY KEY,
   title TEXT,
   year INTEGER,
-  
+  series_id INTEGER
 );
 
     it "creates a books table with a series_id field" do
