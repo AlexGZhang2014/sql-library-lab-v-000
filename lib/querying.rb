@@ -14,6 +14,9 @@ def select_name_and_motto_of_char_with_longest_motto
   "Write your SQL query here"
 end
 
+it 'determines the most prolific species of characters and return its value and count' do
+    expect(@db.execute(select_value_and_count_of_most_prolific_species)).to eq([["human", 4]])
+  end
 
 def select_value_and_count_of_most_prolific_species
   "Write your SQL query here"
