@@ -32,13 +32,9 @@ CREATE TABLE characters (
 );
 
 CREATE TABLE character_books (
-  id INTEGER PRIMARY KEY
+  id INTEGER PRIMARY KEY,
+  
 );
-
-  describe 'character_books join table' do
-    it "creates a character_books table with an id as a primary key" do
-      expect(@db.execute("PRAGMA table_info(character_books);").detect { |arr| arr[-1] == 1 && arr[2] == "INTEGER" }.length).to eq(6)
-    end
 
     it "creates a character_books table with a book_id field" do
       expect{@db.execute("SELECT book_id FROM character_books;")}.to_not raise_exception
