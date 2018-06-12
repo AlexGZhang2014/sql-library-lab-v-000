@@ -21,7 +21,7 @@ it "selects the authors names and their series' subgenres" do
   end
 
 def select_name_and_series_subgenres_of_authors
-  "SELECT authors.name, subgenres.id;"
+  "SELECT authors.name, subgenres.name;"
 end
 
 it 'selects the series title with the most characters that are the species "human"' do
