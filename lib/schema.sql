@@ -18,17 +18,11 @@ CREATE TABLE authors (
 CREATE TABLE books (
   id INTEGER PRIMARY KEY,
   title TEXT,
+  year INTEGER,
+  
   
 );
 
-describe 'books table' do 
-    it "creates a books table with a title field" do
-      expect{@db.execute("SELECT title FROM books;")}.to_not raise_exception
-    end
-
-    it "creates a books table with a year field" do
-      expect{@db.execute("SELECT year FROM books;")}.to_not raise_exception
-    end
 
     it "creates a books table with a series_id field" do
       expect{@db.execute("SELECT series_id FROM books;")}.to_not raise_exception
