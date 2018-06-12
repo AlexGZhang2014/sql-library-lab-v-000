@@ -20,9 +20,7 @@ CREATE TABLE books (
   title TEXT,
   year INTEGER,
   
-  
 );
-
 
     it "creates a books table with a series_id field" do
       expect{@db.execute("SELECT series_id FROM books;")}.to_not raise_exception
