@@ -22,7 +22,9 @@ def select_value_and_count_of_most_prolific_species
   "Write your SQL query here"
 end
 
-
+it "selects the authors names and their series' subgenres" do
+    expect(@db.execute(select_name_and_series_subgenres_of_authors)).to eq([["George R. R. Martin", "medieval"], ["Second Author", "space opera"]])
+  end
 
 def select_name_and_series_subgenres_of_authors
   "Write your SQL query here"
