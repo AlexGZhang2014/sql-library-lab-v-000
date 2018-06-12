@@ -36,8 +36,3 @@ CREATE TABLE character_books (
   book_id INTEGER,
   character_id INTEGER
 );
-
-    it "creates a character_books table with a character_id field" do
-      expect{@db.execute("SELECT character_id FROM character_books;")}.to_not raise_exception
-    end
-  end
