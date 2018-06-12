@@ -1,3 +1,7 @@
+CREATE TABLE series (
+  title
+);
+
 describe 'series table' do 
     it "creates a series table with a title field" do
       expect{@db.execute("SELECT title FROM series;")}.to_not raise_exception
