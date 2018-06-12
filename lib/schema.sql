@@ -22,6 +22,10 @@ CREATE TABLE books (
   series_id INTEGER
 );
 
+CREATE TABLE characters (
+  
+);
+
   describe 'characters table' do 
     it "creates a characters table with a name field" do
       expect{@db.execute("SELECT name FROM characters;")}.to_not raise_exception
