@@ -9,7 +9,7 @@ it 'returns the name and motto of the character with the longest motto' do
   end
 
 def select_name_and_motto_of_char_with_longest_motto
-  "SELECT characters.name, characters.motto FROM characters"
+  "SELECT characters.name, characters.motto FROM characters WHERE characters.motto = (SELECT MAX(characters.motto) FROM characters)"
 end
 
 it 'determines the most prolific species of characters and return its value and count' do
